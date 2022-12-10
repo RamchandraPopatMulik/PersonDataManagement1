@@ -11,9 +11,9 @@ namespace PersonDataMangement
         public string SSN;
         public string Name;
         public string Address;
-        public string Age;
+        public int Age;
 
-        public Person(string ssn,string name,string address,string age)
+        public Person( string ssn,string name,string address,int age )
         {
             this.SSN = ssn;
             this.Name = name;
