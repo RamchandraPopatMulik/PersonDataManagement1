@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace PersonDataMangement
 {
@@ -43,6 +44,17 @@ namespace PersonDataMangement
         public void AverageAge(List<Person> list)
         {
             Console.WriteLine("Average Age is : "+ list.Average(e=>e.Age));
+        }
+        public void CheckNameOrNot(List<Person> list,string name)
+        {
+            if(list.Any(e =>e.Name == name))
+            {
+                Console.WriteLine($"{name} is Present in the List");
+            }
+            else
+            {
+                Console.WriteLine($"{name} is Not Present in the List");
+            }
         }
     }
 }
