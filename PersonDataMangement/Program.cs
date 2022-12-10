@@ -10,9 +10,10 @@
             repository.RetriveDataLessThanSixty(list);
             repository.CheckingForTeenagersPerson(list);
             repository.AverageAge(list);
-            Console.WriteLine("Please Enter Name Which You Want Check :");
-            string name = Console.ReadLine();
-            repository.CheckNameOrNot(list,name);
+            //Console.WriteLine("Please Enter Name Which You Want Check :");
+            //string name = Console.ReadLine();
+            //repository.CheckNameOrNot(list,name);
+            repository.CheckRetriveRecordsGreaterThanSixty(list);
         }
     }
 }

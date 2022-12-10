@@ -56,5 +56,12 @@ namespace PersonDataMangement
                 Console.WriteLine($"{name} is Not Present in the List");
             }
         }
+        public void CheckRetriveRecordsGreaterThanSixty(List<Person> list)
+        {
+            foreach (Person person in list.FindAll(e => e.Age > 60))
+            {
+                Console.WriteLine("Name :" + person.Name + "\tAge :" + person.Age);
+            }
+        }
     }
 }
