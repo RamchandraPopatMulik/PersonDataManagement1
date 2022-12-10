@@ -63,5 +63,18 @@ namespace PersonDataMangement
                 Console.WriteLine("Name :" + person.Name + "\tAge :" + person.Age);
             }
         }
+        public void Remove(List<Person> list,string name)
+        {
+            bool exists = false;
+            foreach (Person person in list.FindAll(e => e.Name == name))
+            {
+                exists = true;
+                list.Remove(person);
+            }
+            if (exists)
+            {
+                Console.WriteLine("Person Removed Sucessfully");
+            }
+        }
     }
 }
