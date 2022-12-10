@@ -40,5 +40,9 @@ namespace PersonDataMangement
                 Console.WriteLine("Sorry There are No Teenagers in the List");
             }
         }
+        public void AverageAge(List<Person> list)
+        {
+            Console.WriteLine("Average Age is : "+ list.Average(e=>e.Age));
+        }
     }
 }
