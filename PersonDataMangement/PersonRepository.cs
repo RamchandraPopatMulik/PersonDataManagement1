@@ -19,7 +19,7 @@ namespace PersonDataMangement
             list.Add(new Person("203456881", "Shrikant", "Kolhapur", 52));
             list.Add(new Person("203456882", "Chetan", "Banglore",53));
             list.Add(new Person("203456883", "Mangesh", "Tamilnadu", 43));
-            list.Add(new Person("203456884", "Madan", "Khanapur", 12));
+            list.Add(new Person("203456884", "Madan", "Khanapur", 15));
             Console.WriteLine(list);
         }
         public void RetriveDataLessThanSixty(List<Person> list)
@@ -27,6 +27,17 @@ namespace PersonDataMangement
             foreach(Person person in list.FindAll(e=>e.Age <60).Take(2).ToList())
             {
                 Console.WriteLine("Name :"+ person.Name +"\tAge :"+person.Age);
+            }
+        }
+        public void CheckingForTeenagersPerson(List<Person> list)
+        {
+            if(list.Any(e=>e.Age>=13 && e.Age <19))
+            {
+                Console.WriteLine("Conguartions There are Teenagers in the List");
+            }
+            else
+            {
+                Console.WriteLine("Sorry There are No Teenagers in the List");
             }
         }
     }

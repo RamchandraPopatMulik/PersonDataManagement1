@@ -8,6 +8,7 @@
             PersonRepository repository = new PersonRepository();
             repository.Records(list);
             repository.RetriveDataLessThanSixty(list);
+            repository.CheckingForTeenagersPerson(list);
         }
     }
 }
