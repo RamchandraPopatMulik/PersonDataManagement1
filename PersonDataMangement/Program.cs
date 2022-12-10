@@ -7,6 +7,7 @@
             List<Person> list = new List<Person>();
             PersonRepository repository = new PersonRepository();
             repository.Records(list);
+            repository.RetriveDataLessThanSixty(list);
         }
     }
 }
